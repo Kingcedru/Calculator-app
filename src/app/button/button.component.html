@@ -1,3 +1,7 @@
-<button class="bg-blue-700 text-white text-xl px-5 py-3 rounded-xl">
+<button
+  [ngStyle]="{ 'background-color': color }"
+  [ngClass]="getSizeClass()"
+  class="text-white rounded-xl"
+>
   {{ propName }}
 </button>
