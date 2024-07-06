@@ -8,4 +8,10 @@ import { TasksComponent } from '../tasks/tasks.component';
   imports: [ButtonComponent, TasksComponent],
   templateUrl: './todo.component.html',
 })
-export class TodoComponent {}
+export class TodoComponent {
+  task:string = ""
+  tasks: string[] = []
+  handleClick(task: any){
+    this.tasks.push(task)
+  }
+}
